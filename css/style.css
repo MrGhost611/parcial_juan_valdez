@@ -1,0 +1,188 @@
+/* RESET */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+/* HEADER */
+.hero {
+    height: 100vh;
+    background: no-repeat center/cover;
+    position: relative;
+}
+
+/* MENÚ */
+.menu-lateral {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-lateral img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.menu-lateral img:hover {
+    transform: scale(1.2);
+    background: #00ffff;
+}
+
+/* NOTICIAS */
+.noticias {
+    background: #d9e6f2;
+    padding: 30px;
+    line-height: 1.6;
+}
+
+.noticias h2 {
+    color: #2b6ca3;
+    margin-bottom: 15px;
+}
+
+/* FORMULARIO */
+.formulario {
+    width: 80%;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.formulario input,
+.formulario select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.formulario button {
+    background: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.formulario button:hover {
+    background: darkgreen;
+}
+
+.formulario input[type="submit"] {
+    background: linear-gradient(90deg, #6b3e26, #c69c6d);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.formulario input[type="submit"]:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #4b2a1a, #a67c52);
+}
+
+/* MULTIMEDIA */
+.multimedia {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.multimedia div {
+    flex: 1;
+}
+
+.multimedia iframe,
+.multimedia video {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* SERVICIOS */
+.combos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+/* CARD */
+.card-combo {
+    width: 280px;
+    text-align: center;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
+    transition: 0.3s;
+    overflow: hidden; /* 🔥 ARREGLA EL PROBLEMA FEO */
+}
+
+/* TITULO */
+.card-combo h2 {
+    background: linear-gradient(90deg,#887c45,#4f2b2b);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* IMAGEN */
+.card-combo img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain; /* 🔥 clave */
+    background: #f8f8f8; /* 🔥 rellena espacios feos */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px; /* 🔥 aire para que no se pegue */
+}
+
+/* HOVER */
+.card-combo:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.25);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+footer img:hover {
+    transform: scale(1.2);
+}
